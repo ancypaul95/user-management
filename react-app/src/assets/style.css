@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100px;
+}
+
+@keyframes background {
+    100% {
+        background-size: 4000px 1000px;
+    }
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    /* background-image: url('bg.svg'); */
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #f9f9f9;
+    font-family: "Euclid Circular A";
+    animation: background 10s infinite alternate linear;
+}
+
+@media(width >=500px) {
+    body {
+        padding: 0;
+    }
+}
+
+.login {
+    width: 90%;
+    padding: 70px 30px 44px;
+    border-radius: 22px;
+    background: #161616;
+    text-align: center;
+}
+
+@media(width >=450px) {
+    .login {
+        width: 380px;
+    }
+}
+
+.avatar {
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+}
+
+.avatar>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #161616;
+}
+
+.login>h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 4px;
+}
+
+.login>h3 {
+    color: rgba(255, 255, 255, 0.38);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.login-form {
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.textbox {
+    width: 100%;
+    position: relative;
+}
+
+.textbox span {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.login-form input {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    padding: 0 20px0 50px;
+    color: inherit;
+}
+
+.login-form input:focus {
+    border-color: #157ae1;
+}
+
+.login-form input:focus~span {
+    color: #157ae1;
+}
+
+.login-form button {
+    cursor: pointer;
+    background: #157ae1;
+    color: #f9f9f9;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.login-form a {
+    color: #157ae1;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.button {
+    /* Set the width and height of the button */
+    width: 90px;
+    height: 32px;
+    /* Add some padding to create space inside the button */
+    /* padding: 10px 20px; */
+    /* Change the background color of the button */
+    background-color: #007bff;
+    /* Change the text color of the button */
+    color: #fff;
+    /* Add some rounded corners to the button */
+    border-radius: 5px;
+    /* Remove the default button border */
+    border: none;
+    /* Add a box-shadow for a subtle visual effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Optional: Change the font and font-size */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    /* Optional: Add a cursor pointer when hovering over the button */
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* Apply different styles when hovering over the button */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Apply different styles when the button is clicked */
+button:active {
+    background-color: #003c80;
+}
+
+.formControl {
+    /* Set the width and height of the input field */
+    width: 200px;
+    height: 30px;
+    /* Add some padding to create space inside the input field */
+    padding: 5px;
+    /* Change the border style, color, and width */
+    border: 1px solid #ccc;
+    /* Add some rounded corners */
+    border-radius: 5px;
+    /* Add a box-shadow for a subtle visual effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Customize the font and font-size */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    /* Optional: Add a background color */
+    background-color: #f7f7f7;
+    /* Optional: Change the color of the text inside the input field */
+    color: #333;
+}
+
+.fontColor {
+    color: #333;
+}
+
+.title {
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.viewChange {
+    margin: 20px
+}
+
+
+.element {
+    background-color: red;
+    /* Replace with your desired color */
+}
